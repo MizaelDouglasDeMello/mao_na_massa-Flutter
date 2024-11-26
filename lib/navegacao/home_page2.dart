@@ -28,7 +28,9 @@ class _HomePage2State extends State<HomePage2> {
                 },
                 child: const Text("Page 3 Via Page")),
             ElevatedButton(
-                onPressed: () {}, child: const Text("Page 3 Via Named"))
+                onPressed: () {
+                  Navigator.pushNamed(context, '/page3');
+                }, child: const Text("Page 3 Via Named"))
           ],
         ),
       ),

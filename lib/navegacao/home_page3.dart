@@ -23,7 +23,9 @@ class HomePage3 extends StatelessWidget {
                 },
                 child: const Text("Page 4 Via Page (pushReplacement)")),
             ElevatedButton(
-                onPressed: () {}, child: const Text("Page 4 Via Named")),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/page4');
+                }, child: const Text("Page 4 Via Named")),
             ElevatedButton(
                 onPressed: () {
                    Navigator.of(context).pop();
