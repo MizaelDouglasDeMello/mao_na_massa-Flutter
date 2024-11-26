@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mao_na_massa/navega%C3%A7%C3%A3o_params/detalhe.dart';
+import 'package:mao_na_massa/navega%C3%A7%C3%A3o_params/lista.dart';
 import 'package:mao_na_massa/navegacao/home_page.dart';
 import 'package:mao_na_massa/navegacao/home_page2.dart';
 import 'package:mao_na_massa/navegacao/home_page3.dart';
@@ -16,9 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      // home: const HomePage(),
+       home: const Lista(),
       routes: {
-        '/': (_) => HomePage(),
+        '/detalhe': (_) => Detalhe(),
         '/page2': (_) => HomePage2(),
         '/page3': (_) => HomePage3(),
         '/page4': (_) => HomePage4(),
